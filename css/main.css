@@ -1,0 +1,350 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: helvetica;
+
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header-banner-dark {
+	height: 130px;
+	width: 100%;
+	background-color: #1d2224;
+	position: absolute;
+	z-index: -2;
+}
+
+#header-banner-light {
+	height: 30px;
+	width: 100%;
+	background-color: #61686b;
+	position: absolute;
+	z-index: -1;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*-----------------------------------------------------*/
+/*-------------------Colour Pallete-------------------*/
+/*---------------------------------------------------*/
+/*
+Orange = #ffaf42
+Dark Grey = #1d2224
+Light Grey = #61686b
+Near White Link Colour = #dbdbdb
+Red = #ff4242
+/*---------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*-----------------------Header-----------------------*/
+/*---------------------------------------------------*/
+
+header {
+	background-color: #1d2224;
+	height: 130px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*---------------------------------------------------*/
+
+header h3 {
+	color: #dbdbdb;
+	background-color: #61686b;
+	text-align: right;
+	padding-right: 20px;
+	height: 30px;
+	line-height: 30px
+}
+
+header img {
+	margin: 10px 0 0 20px;
+}
+
+header nav{
+	float: right;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-right: 20px;
+	line-height: 90px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav li {
+	display: inline;
+}
+
+header a:link {
+	color: #61686b;
+	text-decoration: none;
+}
+
+header a:visited {
+	color: #61686b;
+}
+
+header a:hover {
+	color: #dbdbdb;
+}
+
+header a:active {
+	color: #dbdbdb;
+}
+
+header a.current-link {
+	color: #ffaf42;
+}
+
+/*-----------------------------------------------------*/
+/*---------------------Header End---------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*--------------------Body Content--------------------*/
+/*---------------------------------------------------*/
+
+.main {
+	margin: 0 auto;
+	width: 900px;
+	margin-bottom: 20px;
+}
+
+.main h3 {
+	margin: 10px 0;
+}
+
+.main p {
+	margin: 10px 0;
+}
+
+.left-box {
+	width: 445px;
+	float: left;
+	margin-right: 10px;
+}
+
+.right-box {
+	width: 445px;
+	float: right;
+}
+
+h4 {
+	margin-bottom: 10px;
+}
+
+/*---------------------------------------------------*/
+
+#main h1 {
+	margin: 10px auto 35px auto;
+	text-align: center;
+	color: #1d2224;
+	font-weight: bold;
+}
+
+h2 {
+    width:100%;
+    text-align:center;
+    border-bottom: 8px solid #ffaf42;
+    line-height:0.1em; margin:10px 0 20px;
+    transform: skew(-10deg);
+    color: #1d2224;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 10px;
+	background-color: #FFF;
+	text-align: center;
+} 
+
+h2 span {
+    background:#fff;
+    position: relative;
+    top: 10px;
+    padding:10px 15px;
+    font-family: arial;
+    font-size: 22px;
+}
+
+.videoDiv {
+	text-align: center;
+	margin: 20px auto;
+	height: 400px;
+}
+
+/*-----------------------------------------------------*/
+/*------------------Body Content End------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*----------------------Form CSS----------------------*/
+/*---------------------------------------------------*/
+
+label {
+	box-sizing: border-box;
+	font-weight: bold;
+	display: inline;
+}
+
+input {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 22px;
+	padding: 4px 8px;
+	background-color: #dbdbdb;
+	outline: 0;
+	border: none;
+	display: inline;
+	margin: 3px 0px 20px 0px;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	resize: none;
+	height: 185px;
+	max-height: 185px;
+	padding: 8px 8px;
+	background-color: #dbdbdb;
+	outline: 0;
+	border: none;
+	font-size: 18px;
+	margin: 3px 0px 20px 0px;
+}
+
+select {
+	width: 100%;
+	font-size: 22px;
+	padding: 4px 8px;
+	background-color: #dbdbdb;
+	outline: 0;
+	border: none;
+	margin: 3px 0px 20px 0px;
+}
+
+option {
+	font-family: arial;
+	font-size: 16px
+}
+
+.danger {
+	color: #ff4242;
+	float: right;
+}
+
+.formLeft {
+	width: 49%;
+	float: left;
+}
+
+.formRight {
+	width: 49%;
+	float: right;
+}
+
+/*-----------------------------------------------------*/
+/*-------------------End Form CSS---------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*----------------------Footer------------------------*/
+/*---------------------------------------------------*/
+
+footer {
+	background-color: #1d2224;
+	height: 250px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#footer-banner {
+	height: 255px;
+	width: 100%;
+	left: 0;
+	background-color: #1d2224;
+	position: absolute;
+	z-index: -1;
+}
+
+footer h3 {
+	color: #dbdbdb;
+	margin-bottom: 10px;
+}
+
+footer nav{
+	margin: 20px;
+	float: left;
+}
+
+footer nav ul {
+	list-style: none;
+}
+
+footer nav li {
+	padding: 2px 0;
+}
+
+footer a:link {
+	color: #61686b;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #61686b;
+
+}
+
+a:hover {
+	color: #dbdbdb;
+}
+
+a:active {
+	color: #dbdbdb;
+}
+
+#socialMediaIcons {
+	display: inline-block;
+	float: right;
+	padding: 25px 20px;
+}
+
+/*-----------------------------------------------------*/
+/*--------------------Footer End----------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*----------------------Testing-----------------------*/
+/*---------------------------------------------------*/
+
+/*--------------------------------------------------- NOT SURE IF STILL REQUIRED */ 
+
+button {
+	font-size: 22px;
+	padding: 4px 16px;
+	border: solid 5px #ffaf42;
+	background-color: #FFF;
+	margin: 20px 0;
+}
+
+button p {
+	transform: skew(-10deg);
+	margin-top: 1px;
+	font-family: arial;
+	font-weight: bold;
+	color: #ffaf42;
+}

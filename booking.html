@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fly To The Limit - Booking</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<div id="header-banner-dark"></div>
+		<div id="header-banner-light"></div>
+		<div id="container">
+			
+		<header>
+			<h3>0800 FLY TTL - info@fttl.com</h3>
+			<img src="images/logo_white_small.png">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="flights.html">Flights</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="booking.html" class="current-link">Booking</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+<!--################################################################################################-->
+
+			<h2><span>BOOKING ENQUIREY</span></h2>
+			<div id="main">
+				
+				<div>
+					<form method="POST" action="http://brettt.yoobee.net.nz/formtest/" id="booking-form" novalidate>
+						<div class="formLeft">
+							<label for="name" >YOUR FULL NAME</label>
+							<div id="name-error" class="danger"></div>
+							<input id="name" name="name" type="text" required class="fv-minlength-2">
+								
+							<label for="flight">PICK A FLIGHT</label>
+							<div id="flight-error" class="danger"></div>
+								<select id="flight" name="flight">
+									<option value="">Scenic Flight</option>
+									<option value="">Scenic Flight</option>
+									<option value="">Scenic Flight</option>
+									<option value="">Adventure Flight</option>
+									<option value="">Adventure Flight</option>
+									<option value="">Adventure Flight</option>
+									<option value="">Transport</option>
+									<option value="">Transport</option>
+								</select>
+
+
+							<label for="noPassengers">NUMBER OF PASSENGERS</label>
+							<div id="noPassengers-error" class="danger"></div>
+							<input id="noPassengers" name="noPassengers" type="text" name="noPassengers" required>
+
+							<label for="flightDate">DATE OF FLIGHT</label>
+							<div id="flightDate-error" class="danger"></div>
+							<input id="flightDate" name="flightDate" type="text" name="flightDate" required>
+							
+						</div>
+						<div class="formRight">
+							<label for="email" >YOUR EMAIL</label>
+							<div id="email-error" class="danger"></div>
+							<input id="email" name="email" type="email" required>
+
+							<label for="comments">ADDITIONAL COMMENTS OR REQUESTS</label>
+							<div id="comments-error" class="danger"></div>
+							<textarea id="comments" type="text" name="comments"></textarea>
+						</div>
+							<button id="submit-button"><p>SUBMIT</p></button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+<!--################################################################################################-->
+
+		<div id="footer-banner"></div>
+		<footer>
+			<nav>
+				<ul>
+					<li><h3>Navigation</h3></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="flights.html">Flights</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="booking.html">Booking</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<nav>
+				<ul>
+					<li><h3>Flights</h3></li>
+					<li><a href="#">Mountian Tour</a></li>
+					<li><a href="#">Lake Tour</a></li>
+					<li><a href="#">Charter Tour</a></li>
+					<li><a href="#">Glider Flight</a></li>
+					<li><a href="#">Stunt Flight</a></li>
+					<li><a href="#">Aerobatic Flight</a></li>
+					<li><a href="#">Transport Flight</a></li>
+					<li><a href="#">Heli Drop</a></li>
+				</ul>
+			</nav>
+
+			<nav>
+				<ul>
+					<li><h3>Connect With Us</h3></li>
+					<li><a href="https://www.youtube.com/" target="_blank"></a><img src="images/youtube.png"></li>
+					<li><a href="https://instagram.com/" target="_blank"></a><img src="images/instagram.png"></li>
+				</ul>
+			</nav>
+		</footer>
+		</div>
+
+	<script src="js/form-validation-kit.js"></script>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+
+		var bookingForm = document.querySelector("#booking-form");
+
+		addFormValidation(bookingForm);
+
+	});
+	</script>
+	</body>
+</html>
