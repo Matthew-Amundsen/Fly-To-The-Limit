@@ -145,13 +145,9 @@ header a.current-link {
 	float: right;
 }
 
-h4 {
-	margin-bottom: 10px;
-}
-
 /*---------------------------------------------------*/
 
-#main h1 {
+.main h1 {
 	margin: 10px auto 35px auto;
 	text-align: center;
 	color: #1d2224;
@@ -179,12 +175,34 @@ h2 span {
     padding:10px 15px;
     font-family: arial;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .videoDiv {
 	text-align: center;
 	margin: 20px auto;
 	height: 400px;
+}
+
+.contact-details {
+	float: right;
+	background-color: ;
+	height: 300px;
+	width: 200px;
+	padding: 10px 20px;
+}
+
+.contact-details p {
+	margin: 0;
+}
+
+p.last-line {
+	margin-bottom: 30px;
+}
+
+h4 {
+	margin: 10px 0;
+	color: #1d2224;
 }
 
 /*-----------------------------------------------------*/
@@ -347,4 +365,16 @@ button p {
 	font-family: arial;
 	font-weight: bold;
 	color: #ffaf42;
+}
+
+/*---------------------------------------------------*/
+
+.popup-gallery {
+	margin: 25px auto;
+	width: 685px;
+
+}
+
+.popup-gallery img {
+
 }
