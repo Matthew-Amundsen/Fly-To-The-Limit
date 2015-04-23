@@ -112,6 +112,10 @@ header a.current-link {
 	color: #ffaf42;
 }
 
+header a.current-link:hover {
+	color: #dbdbdb;
+}
+
 /*-----------------------------------------------------*/
 /*---------------------Header End---------------------*/
 /*---------------------------------------------------*/
@@ -172,7 +176,7 @@ h2 span {
     background:#fff;
     position: relative;
     top: 10px;
-    padding:10px 15px;
+    padding: 5px 15px;
     font-family: arial;
     font-size: 22px;
     margin-bottom: 10px;
@@ -181,7 +185,7 @@ h2 span {
 .videoDiv {
 	text-align: center;
 	margin: 20px auto;
-	height: 400px;
+	min-height: 400px;
 }
 
 .contact-details {
