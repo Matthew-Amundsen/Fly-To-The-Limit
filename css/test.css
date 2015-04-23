@@ -102,3 +102,93 @@ h2 span {
     font-family: arial;
     font-size: 22px;
 }
+
+/*-----------------------------------------------------*/
+/*-----------------------Testing----------------------*/
+/*---------------------------------------------------*/
+
+label {
+	box-sizing: border-box;
+	font-weight: bold;
+	display: inline;
+}
+
+input {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 22px;
+	padding: 4px 8px;
+	background-color: #dbdbdb;
+	outline: 0;
+	border: none;
+	display: inline;
+	margin: 3px 0px 20px 0px;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	resize: none;
+	height: 180px;
+	max-height: 180px;
+	padding: 8px 8px;
+	background-color: #dbdbdb;
+	outline: 0;
+	border: none;
+	font-size: 18px;
+	margin: 3px 0px 20px 0px;
+}
+
+select {
+	width: 100%;
+	font-size: 22px;
+	padding: 4px 8px;
+	background-color: #dbdbdb;
+	outline: 0;
+	border: none;
+	margin: 3px 0px 20px 0px;
+}
+
+option {
+	font-family: arial;
+	font-size: 16px
+}
+
+.danger {
+	color: #ff4242;
+	float: right;
+}
+
+.form-left {
+	width: 49%;
+	float: left;
+}
+
+.form-right {
+	width: 49%;
+	float: right;
+}
+
+
+
+.button {
+	float: right;
+	width: 100px;
+	color: #ffaf42;
+	border: solid 4px #ffaf42;
+	background-color: #FFF;
+}
+
+.button:hover {
+	width: 100px;
+	color: #1d2224;
+	border: solid 4px #ffaf42;
+	background-color: #ffaf42;
+}
+
+.button:active {
+	width: 100px;
+	color: #ffaf42;
+	border: solid 4px #1d2224;
+	background-color: #FFF;
+}

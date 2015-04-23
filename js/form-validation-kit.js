@@ -6,20 +6,30 @@ function addFormValidation(formElement) {
 	}
 
 	formElement.addEventListener("submit", function (evt) {
-
-		var error = false;
-
-		for (var i = 0; i < evt.target.length; i += 1) {
-		 	var isValid = validateField(evt.target[i]);
-		 	if ( ! isValid) { 
-		 		error = true;
-		 	}
-		}
-		
-		if (error) {
+		if (!validateForm(evt.target)) {
 			evt.preventDefault();
 		}
 	});
+
+	for (var i = 0; i < formElement.length; i += 1) {
+		var field = formElement[i];
+		field.addEventListener('blur', function (evt) {
+			validateField(evt.target);
+		});
+	}
+}
+
+function validateForm(formElement) {
+	var error = false;
+
+	for (var i = 0; i < formElement.length; i += 1) {
+	 	var isValid = validateField(formElement[i]);
+	 	if ( ! isValid) { 
+	 		error = true;
+	 	}
+	}
+
+	return !error;
 }
 
 
@@ -36,8 +46,7 @@ function validateField(el) {
 	// find this element's match error div.
 	var errorDiv = document.querySelector("#" + el.id + "-error");
 	if (errorDiv === null) {
-
-		throw new Error("could not find error element to match #" + el.id );
+		throw new Error("could not find error element to match #" + el.id, el);
 	}
 
 	errorDiv.innerHTML = "";
@@ -45,10 +54,10 @@ function validateField(el) {
 	if (el.classList) {
 	  el.classList.remove('invalid');
 	} else {
-	  el.className = el.className.replace(new /(^|\b)invalid(\b|$)/gi, ' ');
+	  el.className = el.className.replace(/(^|\b)invalid(\b|$)/gi, ' ');
 	}
 
-	if (el.type === "email" && !isEmail(el.value)) {
+	if (el.type === "email" && el.value.length > 1 && !isEmail(el.value)) {
 		error = "please provide a valid email address.";
 	}
 
@@ -83,9 +92,6 @@ function validateField(el) {
 }
 
 function isEmail(input) {
-	return input.match(/^([a-z0-9_.\-+]+)@([\da-z.\-]+)\.([a-z\.]{2,})$/)
+	return input.match(/^([a-z0-9_.\-+]+)@([\da-z.\-]+)\.([a-z\.]{2,})$/);
 }
-
-
-
-
+	

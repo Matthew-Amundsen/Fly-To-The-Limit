@@ -12,7 +12,7 @@
 			
 		<header>
 			<h3>0800 FLY TTL - info@fttl.com</h3>
-			<img src="images/logo_white_small.png">
+			<a href="index.html"><img src="images/logo_white_small.png"></a>
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -28,11 +28,11 @@
 <!-- ################################################################################################ -->
 
 			<h2><span>BOOKING ENQUIREY</span></h2>
-			<div id="main">
+			<div class="main">
 				
 				<div>
 					<form method="POST" action="http://brettt.yoobee.net.nz/formtest/" id="booking-form" novalidate>
-						<div class="formLeft">
+						<div class="form-left">
 							<label for="name" >YOUR FULL NAME</label>
 							<div id="name-error" class="danger"></div>
 							<input id="name" name="name" type="text" required class="fv-minlength-2">
@@ -40,28 +40,26 @@
 							<label for="flight">PICK A FLIGHT</label>
 							<div id="flight-error" class="danger"></div>
 								<select id="flight" name="flight">
-									<option value="">1hr Helicopter Scenic Flight</option>
-									<option value="">2hr Helicopter Scenic Flight</option>
-									<option value="">1hr Glider Scenic Flight</option>
-									<option value="">2hr Glider Scenic Flight</option>
-									<option value="">Mountian Viewing Flight</option>
-									<option value="">Lake Trip</option>
-									<option value="">Photographic Flight</option>
-									<option value="">Charter Flight</option>
-									<option value="">Multi-day Tramp</option>
+									<option value="Lake Trip">Lake Trip</option>
+									<option value="Scenic Flight">Scenic Flight</option>
+									<option value="Mountain Viewing">Mountain Viewing</option>
+									<option value="Photographic Flight">Photographic Flight</option>
+									<option value="Glider Flight">Glider Flight</option>
+									<option value="Stunt Plane Flight">Stunt Plane Flight</option>
+									<option value="Charter">Charter Flight</option>
 								</select>
 
 
-							<label for="noPassengers">NUMBER OF PASSENGERS</label>
-							<div id="noPassengers-error" class="danger"></div>
-							<input id="noPassengers" name="noPassengers" type="text" name="noPassengers" required>
+							<label for="no-passengers">NUMBER OF PASSENGERS</label>
+							<div id="no-passengers-error" class="danger"></div>
+							<input id="no-passengers" name="no-passengers" type="text" name="no-passengers" required>
 
-							<label for="flightDate">DATE OF FLIGHT</label>
-							<div id="flightDate-error" class="danger"></div>
-							<input id="flightDate" name="flightDate" type="text" name="flightDate" required>
+							<label for="flight-date">DATE OF FLIGHT</label>
+							<div id="flight-date-error" class="danger"></div>
+							<input id="flight-date" name="flight-date" type="text" name="flight-date" required>
 							
 						</div>
-						<div class="formRight">
+						<div class="form-right">
 							<label for="email" >YOUR EMAIL</label>
 							<div id="email-error" class="danger"></div>
 							<input id="email" name="email" type="email" required>
@@ -70,7 +68,7 @@
 							<div id="comments-error" class="danger"></div>
 							<textarea id="comments" type="text" name="comments"></textarea>
 						</div>
-							<button id="submit-button"><p>SUBMIT</p></button>
+							<input class="button" type="submit" value="SUBMIT"></input>
 					</form>
 				</div>
 			</div>
