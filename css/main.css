@@ -248,6 +248,37 @@ h4 {
 
 }
 
+/*---------------------------------------------------*/
+
+#promo-link {
+	text-align: center;
+	margin: 20px 0;
+}
+
+#promo-link a {
+	text-decoration: none;
+	color: #61686b;
+	border: solid 2px #61686b;
+	padding: 5px 5px 3px 5px;
+}
+
+#promo-link a:visited {
+	text-decoration: none;
+	color: #61686b;
+}
+
+#promo-link a:hover {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+#promo-link a:active {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
 /*-----------------------------------------------------*/
 /*------------------Body Content End------------------*/
 /*---------------------------------------------------*/
@@ -392,16 +423,16 @@ footer a:link {
 	text-decoration: none;
 }
 
-a:visited {
+footer a:visited {
 	color: #61686b;
 
 }
 
-a:hover {
+footer a:hover {
 	color: #dbdbdb;
 }
 
-a:active {
+footer a:active {
 	color: #dbdbdb;
 }
 
@@ -416,13 +447,58 @@ a:active {
 /*---------------------------------------------------*/
 
 /*-----------------------------------------------------*/
-/*----------------------Testing-----------------------*/
+/*----------------------Site Map----------------------*/
+/*---------------------------------------------------*/
+
+.site-map {
+	margin: 20px;
+}
+
+.site-map h1 {
+	margin: 20px;
+}
+
+.site-map h4 {
+	margin: 20px;
+}
+
+.site-map ul {
+	list-style: square;
+	color: #61686b;
+}
+
+.site-map a:link {
+	text-decoration: none;
+	color: #61686b;
+}
+
+.site-map a:visited {
+	color: #61686b;
+}
+
+.site-map a:hover {
+	color: #ffaf42;
+}
+
+.site-map a:active {
+	color: #ffaf42;
+}
+/*-----------------------------------------------------*/
+/*--------------------Site Map End--------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*-----------------Print Style Sheet------------------*/
 /*---------------------------------------------------*/
 
 @media print {
 
-	header {
-		/*display: none;*/
+	header img{
+		display: none;
+	}
+
+	header:after {
+		content:url(../images/logo_black_small.png);
 	}
 
 	footer {
@@ -440,4 +516,12 @@ a:active {
 	.video-div {
 		display: none;
 	}
+
+	a {
+		display: none;
+	}
 }
+
+/*-----------------------------------------------------*/
+/*---------------Print Style Sheet End----------------*/
+/*---------------------------------------------------*/
