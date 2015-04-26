@@ -90,6 +90,7 @@ header nav ul {
 
 header nav li {
 	display: inline;
+	margin: 2px;
 }
 
 header a:link {
@@ -146,18 +147,19 @@ header a.current-link:hover {
 }
 
 .right-box {
+	margin-top: 10px;
 	width: 445px;
 	float: right;
 }
 
 /*---------------------------------------------------*/
 
-.main h1 {
+/*.main h1 {
 	margin: 10px auto 35px auto;
 	text-align: center;
 	color: #1d2224;
 	font-weight: bold;
-}
+}*/
 
 h2 {
     width:100%;
@@ -171,6 +173,7 @@ h2 {
 	line-height: 10px;
 	background-color: #FFF;
 	text-align: center;
+	margin: 25px 0;
 } 
 
 h2 span {
@@ -187,6 +190,10 @@ h2 span {
 	text-align: center;
 	margin: 20px auto;
 	min-height: 400px;
+}
+
+iframe {
+	margin: 25px 0;
 }
 
 .contact-details {
@@ -354,22 +361,22 @@ option {
 	float: right;
 }
 
-.button {
-	width: 100px;
+input.button {
+	width: 105px;
 	color: #ffaf42;
 	border: solid 4px #ffaf42;
 	background-color: #FFF;
 }
 
-.button:hover {
-	width: 100px;
-	color: #1d2224;
+input.button:hover {
+	width: 105px;
+	color: #FFF;
 	border: solid 4px #ffaf42;
 	background-color: #ffaf42;
 }
 
-.button:active {
-	width: 100px;
+input.button:active {
+	width: 105px;
 	color: #ffaf42;
 	border: solid 4px #ffaf42;
 	background-color: #1d2224;
