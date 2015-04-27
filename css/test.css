@@ -4,28 +4,31 @@
 
 body {
 	font-family: helvetica;
+	color: #1d2224;
 
 }
 
-#container {
-	width: 960px;
-	margin: 0 auto;
-}
-
-#header-banner-dark {
-	height: 130px;
+.container {
 	width: 100%;
 	background-color: #1d2224;
-	position: absolute;
-	z-index: -2;
 }
 
-#header-banner-light {
-	height: 30px;
+.container-contact {
 	width: 100%;
 	background-color: #61686b;
-	position: absolute;
-	z-index: -1;
+}
+
+.container-contact h3 {
+	margin: 0 auto;
+	width: 960px;
+	color: #dbdbdb;
+	text-align: right;
+	height: 30px;
+}
+
+.body {
+	width: 960px;
+	margin: 0 auto;
 }
 
 .cf:before,
@@ -49,6 +52,85 @@ Near White Link Colour = #dbdbdb
 Red = #ff4242
 /*---------------------------------------------*/
 
+/*-----------------------------------------------------*/
+/*-----------------------Header-----------------------*/
+/*---------------------------------------------------*/
+
+header {
+	background-color: #1d2224;
+	height: 100px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*---------------------------------------------------*/
+
+header h3 {
+	color: #dbdbdb;
+	background-color: #61686b;
+	text-align: right;
+	padding-right: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+
+header img {
+	margin: 10px 0 0 20px;
+	display: inline-block;
+}
+
+header nav{
+	/*float: right;*/
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-right: 20px;
+	line-height: 90px;
+}
+
+header nav ul {
+	text-align: right;
+	list-style: none;
+	padding-left: 0;
+}
+
+header nav li {
+	display: inline;
+	margin: 2px;
+}
+
+header a:link {
+	color: #61686b;
+	text-decoration: none;
+}
+
+header a:visited {
+	color: #61686b;
+}
+
+header a:hover {
+	color: #dbdbdb;
+}
+
+header a:active {
+	color: #dbdbdb;
+}
+
+header a.current-link {
+	color: #ffaf42;
+}
+
+header a.current-link:hover {
+	color: #dbdbdb;
+}
+
+/*-----------------------------------------------------*/
+/*---------------------Header End---------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*--------------------Body Content--------------------*/
+/*---------------------------------------------------*/
+
 .main {
 	margin: 0 auto;
 	width: 900px;
@@ -59,26 +141,23 @@ Red = #ff4242
 	margin: 10px 0;
 }
 
+.main p {
+	margin: 10px 0;
+}
+
 .left-box {
 	width: 445px;
 	float: left;
-	margin-right: 10px;
+	margin: 0 10px 20px 0;
 }
 
 .right-box {
+	margin-top: 10px;
 	width: 445px;
 	float: right;
 }
 
-img {
-	height: 180px;
-	width: 100%;
-}
-
-/*-----------------------------------------------------*/
-/*------------------Body Content End------------------*/
 /*---------------------------------------------------*/
-
 
 h2 {
     width:100%;
@@ -92,19 +171,152 @@ h2 {
 	line-height: 10px;
 	background-color: #FFF;
 	text-align: center;
+	margin: 25px 0;
 } 
 
 h2 span {
     background:#fff;
     position: relative;
     top: 10px;
-    padding:10px 15px;
+    padding: 5px 15px;
     font-family: arial;
     font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.videoiv {
+	text-align: center;
+	margin: 20px auto;
+	min-height: 400px;
+}
+
+iframe {
+	margin: 25px 0;
+}
+
+.contact-details {
+	float: right;
+	height: 300px;
+	width: 200px;
+	padding: 10px 20px;
+}
+
+.contact-details p {
+	margin: 0;
+}
+
+p.last-line {
+	margin-bottom: 30px;
+}
+
+h4 {
+	margin: 10px 0;
+	color: #1d2224;
+}
+
+/*---------------------------------------------------*/
+
+.left-box a:link {
+	margin-right: 10px;
+	float: right;
+	text-decoration: none;
+	color: #61686b;
+	border: solid 2px #61686b;
+	padding: 5px 5px 3px 5px;
+}
+
+.left-box a:visited {
+	text-decoration: none;
+	color: #61686b;
+}
+
+.left-box a:hover {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+.left-box a:active {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+/*---------------------------------------------------*/
+
+.full-box a:link {
+	margin-right: 10px;
+	float: right;
+	text-decoration: none;
+	color: #61686b;
+	border: solid 2px #61686b;
+	padding: 5px 5px 3px 5px;
+}
+
+.full-box a:visited {
+	text-decoration: none;
+	color: #61686b;
+}
+
+.full-box a:hover {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+.full-box a:active {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+.popup-gallery {
+	margin: 25px auto;
+	width: 685px;
+
+}
+
+.popup-gallery img {
+
+}
+
+/*---------------------------------------------------*/
+
+#promo-link {
+	text-align: center;
+	margin: 20px 0;
+}
+
+#promo-link a {
+	text-decoration: none;
+	color: #61686b;
+	border: solid 2px #61686b;
+	padding: 5px 5px 3px 5px;
+}
+
+#promo-link a:visited {
+	text-decoration: none;
+	color: #61686b;
+}
+
+#promo-link a:hover {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+#promo-link a:active {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
 }
 
 /*-----------------------------------------------------*/
-/*-----------------------Testing----------------------*/
+/*------------------Body Content End------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*----------------------Form CSS----------------------*/
 /*---------------------------------------------------*/
 
 label {
@@ -116,11 +328,12 @@ label {
 input {
 	width: 100%;
 	box-sizing: border-box;
+	height: 40px;
 	font-size: 22px;
 	padding: 4px 8px;
 	background-color: #dbdbdb;
 	outline: 0;
-	border: none;
+	border: 1px solid #dbdbdb;
 	display: inline;
 	margin: 3px 0px 20px 0px;
 }
@@ -129,23 +342,24 @@ textarea {
 	width: 100%;
 	box-sizing: border-box;
 	resize: none;
-	height: 180px;
-	max-height: 180px;
+	height: 202px;
+	max-height: 202px;
 	padding: 8px 8px;
 	background-color: #dbdbdb;
+	border: 1px solid #dbdbdb;
 	outline: 0;
-	border: none;
 	font-size: 18px;
 	margin: 3px 0px 20px 0px;
 }
 
 select {
 	width: 100%;
+	height: 40px;
 	font-size: 22px;
 	padding: 4px 8px;
 	background-color: #dbdbdb;
 	outline: 0;
-	border: none;
+	border: 1px solid #dbdbdb;
 	margin: 3px 0px 20px 0px;
 }
 
@@ -159,6 +373,10 @@ option {
 	float: right;
 }
 
+.invalid {
+	border: 1px solid red;
+}
+
 .form-left {
 	width: 49%;
 	float: left;
@@ -169,26 +387,173 @@ option {
 	float: right;
 }
 
-
-
-.button {
-	float: right;
-	width: 100px;
+input.button {
+	width: 105px;
 	color: #ffaf42;
 	border: solid 4px #ffaf42;
 	background-color: #FFF;
 }
 
-.button:hover {
-	width: 100px;
-	color: #1d2224;
+input.button:hover {
+	width: 105px;
+	color: #FFF;
 	border: solid 4px #ffaf42;
 	background-color: #ffaf42;
 }
 
-.button:active {
-	width: 100px;
+input.button:active {
+	width: 105px;
 	color: #ffaf42;
-	border: solid 4px #1d2224;
-	background-color: #FFF;
+	border: solid 4px #ffaf42;
+	background-color: #1d2224;
 }
+
+/*-----------------------------------------------------*/
+/*-------------------End Form CSS---------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*----------------------Footer------------------------*/
+/*---------------------------------------------------*/
+
+footer {
+	background-color: #1d2224;
+	height: 250px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#footer-banner {
+	height: 255px;
+	width: 100%;
+	left: 0;
+	background-color: #1d2224;
+	position: absolute;
+	z-index: -1;
+}
+
+footer h3 {
+	color: #dbdbdb;
+	margin-bottom: 10px;
+}
+
+footer nav{
+	margin: 20px;
+	float: left;
+}
+
+footer nav ul {
+	list-style: none;
+}
+
+footer nav li {
+	padding: 2px 0;
+}
+
+footer a:link {
+	color: #61686b;
+	text-decoration: none;
+}
+
+footer a:visited {
+	color: #61686b;
+
+}
+
+footer a:hover {
+	color: #dbdbdb;
+}
+
+footer a:active {
+	color: #dbdbdb;
+}
+
+#socialMediaIcons {
+	display: inline-block;
+	float: right;
+	padding: 25px 20px;
+}
+
+/*-----------------------------------------------------*/
+/*--------------------Footer End----------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*----------------------Site Map----------------------*/
+/*---------------------------------------------------*/
+
+.site-map {
+	margin: 20px;
+}
+
+.site-map h1 {
+	margin: 20px;
+}
+
+.site-map h4 {
+	margin: 20px;
+}
+
+.site-map ul {
+	list-style: square;
+	color: #61686b;
+}
+
+.site-map a:link {
+	text-decoration: none;
+	color: #61686b;
+}
+
+.site-map a:visited {
+	color: #61686b;
+}
+
+.site-map a:hover {
+	color: #ffaf42;
+}
+
+.site-map a:active {
+	color: #ffaf42;
+}
+/*-----------------------------------------------------*/
+/*--------------------Site Map End--------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/*-----------------Print Style Sheet------------------*/
+/*---------------------------------------------------*/
+
+@media print {
+
+	header img{
+		display: none;
+	}
+
+	header:after {
+		content:url(../images/logo_black_small.png);
+	}
+
+	footer {
+		display: none;
+	}
+
+	input {
+		border: solid 1px #1d2224;
+	}
+
+	textarea {
+		border: solid 1px #1d2224;
+	}
+
+	.video-div {
+		display: none;
+	}
+
+	a {
+		display: none;
+	}
+}
+
+/*-----------------------------------------------------*/
+/*---------------Print Style Sheet End----------------*/
+/*---------------------------------------------------*/

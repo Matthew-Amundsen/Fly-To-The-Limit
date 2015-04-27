@@ -8,25 +8,27 @@ body {
 
 }
 
-#container {
-	width: 960px;
-	margin: 0 auto;
-}
-
-#header-banner-dark {
-	height: 130px;
+.container {
 	width: 100%;
 	background-color: #1d2224;
-	position: absolute;
-	z-index: -2;
 }
 
-#header-banner-light {
-	height: 30px;
+.container-contact {
 	width: 100%;
 	background-color: #61686b;
-	position: absolute;
-	z-index: -1;
+}
+
+.container-contact h3 {
+	margin: 0 auto;
+	width: 960px;
+	color: #dbdbdb;
+	text-align: right;
+	height: 30px;
+}
+
+.body {
+	width: 960px;
+	margin: 0 auto;
 }
 
 .cf:before,
@@ -56,7 +58,7 @@ Red = #ff4242
 
 header {
 	background-color: #1d2224;
-	height: 130px;
+	height: 100px;
 	width: 960px;
 	margin: 0 auto;
 }
@@ -69,7 +71,7 @@ header h3 {
 	text-align: right;
 	padding-right: 20px;
 	height: 30px;
-	line-height: 30px
+	line-height: 30px;
 }
 
 header img {
@@ -86,6 +88,7 @@ header nav{
 
 header nav ul {
 	list-style: none;
+	padding-left: 0;
 }
 
 header nav li {
@@ -153,13 +156,6 @@ header a.current-link:hover {
 }
 
 /*---------------------------------------------------*/
-
-/*.main h1 {
-	margin: 10px auto 35px auto;
-	text-align: center;
-	color: #1d2224;
-	font-weight: bold;
-}*/
 
 h2 {
     width:100%;
@@ -239,6 +235,34 @@ h4 {
 }
 
 .left-box a:active {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+/*---------------------------------------------------*/
+
+.full-box a:link {
+	margin-right: 10px;
+	float: right;
+	text-decoration: none;
+	color: #61686b;
+	border: solid 2px #61686b;
+	padding: 5px 5px 3px 5px;
+}
+
+.full-box a:visited {
+	text-decoration: none;
+	color: #61686b;
+}
+
+.full-box a:hover {
+	text-decoration: none;
+	color: #ffaf42;
+	border: solid 2px #ffaf42;
+}
+
+.full-box a:active {
 	text-decoration: none;
 	color: #ffaf42;
 	border: solid 2px #ffaf42;
