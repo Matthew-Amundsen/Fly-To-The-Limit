@@ -159,6 +159,13 @@ header a.current-link:hover {
 .spacer {
 	margin-bottom: 50px;
 }
+
+.thank-you {
+	text-align: center;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
 /*---------------------------------------------------*/
 
 h2 {
